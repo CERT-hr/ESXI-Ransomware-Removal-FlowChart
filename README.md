@@ -12,6 +12,7 @@ ESXI related ransomware removal flow chart (How to handle this incident)
 # Notes
 - Always ask your user if they have backups that they can restore, after backing up an update is needed ASAP. 
 - Still, it is recommended to disable SLP just in case and to monitor the systems. 
+- NEVADA isn't as trending as ARGS is, but we included it for its activity within the last 4 days, this is important to note since the most important thing on the chart is ARGS. We just want to aggregate the fixes, so if there are other ESXi related RW feel free to report them to us. 
 
 # Monitoring options : 
 1) https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q=services.http.response.html_title%3A%22How+to+Restore+Your+Files%22
@@ -30,7 +31,7 @@ ESXI related ransomware removal flow chart (How to handle this incident)
 
 # Thanks
 - Huge thanks to people from MM, especially L. 
-
+- Thank you to E. for the Nevada comment 
 
 
 
