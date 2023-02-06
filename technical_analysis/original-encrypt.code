@@ -1,0 +1,67 @@
+undefined4 main(int param_1,long param_2)
+
+{
+  int iVar1;
+  undefined4 local_4c;
+  ulong local_38;
+  long local_30;
+  long local_28;
+  undefined8 local_20;
+  void *local_18;
+  uint local_c;
+  
+  if (param_1 < 3) {
+    puts("usage: encrypt <public_key> <file_to_encrypt> [<enc_step>] [<enc_size>] [<file_size>]");
+    puts("       enc_step   -   number of MB to skip while encryption");
+    puts("       enc_size   -   number of MB in encryption block");
+    puts("       file_size  -   file size in bytes (for sparse files)\n");
+    local_4c = 1;
+  }
+  else {
+    local_28 = 0;
+    local_30 = 1;
+    local_38 = 0;
+    if (3 < param_1) {
+      iVar1 = atoi(*(char **)(param_2 + 0x18));
+      local_28 = (long)iVar1;
+    }
+    if (4 < param_1) {
+      iVar1 = atoi(*(char **)(param_2 + 0x20));
+      local_30 = (long)iVar1;
+    }
+    if (5 < param_1) {
+      iVar1 = atoi(*(char **)(param_2 + 0x28));
+      local_38 = (ulong)iVar1;
+    }
+    local_c = init_libssl();
+    if (local_c == 0) {
+      iVar1 = get_pk_data(*(char **)(param_2 + 8),&local_18);
+      if (iVar1 == 0) {
+        iVar1 = create_rsa_obj(local_18,&local_20);
+        if (iVar1 == 0) {
+          iVar1 = encrypt_file(*(char **)(param_2 + 0x10),local_20,local_28,local_30,local_38);
+          if (iVar1 == 0) {
+            local_4c = 0;
+          }
+          else {
+            print_error("encrypt_file",0);
+            local_4c = 5;
+          }
+        }
+        else {
+          print_error("create_rsa_obj",0);
+          local_4c = 4;
+        }
+      }
+      else {
+        print_error("get_pk_data",0);
+        local_4c = 3;
+      }
+    }
+    else {
+      printf("init_libssl returned %d\n",(ulong)local_c);
+      local_4c = 2;
+    }
+  }
+  return local_4c;
+}
