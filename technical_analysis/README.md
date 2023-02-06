@@ -34,7 +34,8 @@ encrypt.c file, public key (to be used in encryption) and more.
 		- Then it updates the timestamp of the busybox file : /usr/lib/vmware/busybox/bin/busybox  with timestamps of /sbin/hostd-probe
 - Lists out vmware "7." version and counts lines of output
 		- If line number isnt zero it :
-			- Chmods for writing this file : /var/spool/cron/crontabs/root  
+			- Chmods for writing this file : /var/spool/cron/crontabs/root 
+			- ... 
 			* TODO
 		- If its zero 
 			* TODO 
