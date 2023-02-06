@@ -1,6 +1,7 @@
 # Notes 
 
 - This is the first (quick) version of the analysis.  
+- This refers to 2 original files attached in this folder
 - Please contact us via MM or at fomazic@cert.hr for all the changes you'd like to make or code you'd like to ask about.
 
 # Summary 
