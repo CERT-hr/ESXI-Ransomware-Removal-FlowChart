@@ -3,13 +3,14 @@
 - This is the first (quick) version of the analysis.  
 - This refers to 2 original files attached in this folder
 - Please contact us via MM or at fomazic@cert.hr for all the changes you'd like to make or code you'd like to ask about.
+- Encrypt.code's .code extension isn't its real extension
 
 # Summary 
 
-- Main .sh file runs the main operation that when ready runs encryption. (Main .sh file runs a compiled version of encrypt.c)
+- Main .sh file runs the main operation that when ready runs encryption. (Main .sh file runs a compiled version of encrypt.code)
 - The main .sh file in question also seems to use a lot of files in /tmp - so we're assuming that's where the attacker unpacked ransom note, main .sh file, 
-encrypt.c file, public key (to be used in encryption) and more.
-- Encrypt.c is compiled to an executable file and its used to encrypt the files.
+encrypt.code file, public key (to be used in encryption) and more.
+- Encrypt.code is compiled to an executable file and its used to encrypt the files.
 
 # Main .sh file activities
 
@@ -48,7 +49,7 @@ encrypt.c file, public key (to be used in encryption) and more.
 - Removes /bin/auto-backup.sh and it removes itself.
 - Starts SSH
 
-# Encrypt.c activities
+# Encrypt.code activities
 
 - Prints out help if the input is wrong, checks inputs to be valid always
 - Else statements just return exit codes with different numbers (and specify where the error occured)
