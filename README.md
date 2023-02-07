@@ -20,6 +20,8 @@ ESXI related ransomware removal flow chart (How to handle this incident)
 (and obviously filter by your country or however you like)
 
 # Malware code (args)
+- In the folder technical_analysis.
+- Or
 - https://pastebin.com/y6wS2BXh (main .sh script)
 - https://pastecode.io/s/ze8f5jg7 (encrypt library)
 
