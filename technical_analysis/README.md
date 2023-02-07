@@ -57,11 +57,11 @@ encrypt.code file, public key (to be used in encryption) and more.
 - Encrypts file
 
 Additional Notes:
-- get_pk_data gets public key data, but it doesn't look like a typical file-reading operation, TODO Research this
+- get_pk_data gets public key data
+- This looks like it came from Ghidra....
 - It does most of the operations with param_2, it just checks if statements for param_1
-	- This is odd since param_1 should be the public key (or if counting from [0] then it's the filename but i doubt they'd be using if statements on that?)
-	- Meaning it does most operations with "file_to_encrypt" ? 
-- TODO - analyze better. Didn't have too much time
+	- and it checks it odd way. I assume its length considering the help print statement also has a similar IF, if so - all the if statements below are ran because len(encrypt) is over 5 or whatever the highest number check there is
+- TODO 
 
 
 
