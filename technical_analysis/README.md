@@ -11,6 +11,7 @@
 - The main .sh file in question also seems to use a lot of files in /tmp - so we're assuming that's where the attacker unpacked ransom note, main .sh file, 
 encrypt.code file, public key (to be used in encryption) and more.
 - Encrypt.code is compiled to an executable file and its used to encrypt the files.
+- Potential Sosemanuk enc features
 
 # Main .sh file activities
 
