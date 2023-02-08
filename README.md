@@ -23,8 +23,7 @@ ESXI related ransomware removal flow chart (How to handle this incident)
 # Malware code (args)
 - In the folder technical_analysis. (Readme with explaination inside)
 - Or
-- https://pastebin.com/y6wS2BXh (main .sh script)
-- https://pastecode.io/s/ze8f5jg7 (encrypt library)
+- https://blog.cyble.com/2023/02/06/massive-ransomware-attack-targets-vmware-esxi-servers/
 
 # Something is wrong with this chart or README?
 - Please Contact us on MM. 
