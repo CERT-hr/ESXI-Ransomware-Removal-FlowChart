@@ -2,12 +2,13 @@
 ESXI related ransomware removal flow chart (How to handle this incident)
 
 # Flow chart
-![alt text](ESXiFlowChart.png)
+![alt text](ESXiFlowChart2.png)
 
 # References in the flowchart:
 1) https://twitter.com/habib_karatas/status/1621623821039017985
 2) https://enes.dev 
 3) https://gist.github.com/MarianBojescu/da539a47d5eae29383a4804218ad7220
+4) https://github.com/cisagov/ESXiArgs-Recover
 
 # Notes
 - Always ask your user if they have backups that they can restore, after backing up an update is needed ASAP. 
