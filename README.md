@@ -2,7 +2,7 @@
 ESXI related ransomware removal flow chart (How to handle this incident)
 
 # Flow chart
-![alt text](ESXiFlowChart2.png)
+![alt text](ESXiFlowChart.png)
 
 # References in the flowchart:
 1) https://twitter.com/habib_karatas/status/1621623821039017985
